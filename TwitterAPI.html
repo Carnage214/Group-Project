@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+
+<div id="timeline">
+	
+</div>
+
+<button id="showNewTweets"></button>
+<input type="text" id="twitter-handle">
+
+<script src="https://platform.twitter.com/widgets.js"></script>
+
+<script type="text/javascript">
+
+	function showTweets (twitterHandle) {
+		document.getElementById('timeline').innerHTML="";
+
+		twttr.widgets.createTimeline({
+			sourceType: "profile",
+			screenName: twitterHandle
+		},
+		document.getElementById('timeline'),
+		{
+			width: '450',
+			height: '700',
+			related: 'twitterdev,twitterapi'
+		}).then(function (el) {
+			console.log("Embedded a timeline.")
+		});
+	}
+
+	document.getElementById('showNewTweets').onclick = function () {
+		var twitterHandle = document.getElementById('twitter-handle').value;
+		showTweets(twitterHandle)
+	}	
+	
+
+</script>
+
+</body>
+</html>
