@@ -33,6 +33,9 @@ function showDivs(n) {
     $("#demo").text($(this).data('info'));   
   })
 
+  $('.mapIMG').on('mouseout', function () {
+    $("#demo").text($(this).data('default'));   
+  })
 /*/ function mouseOut() {
     $("#demo").text("What Area Are You Looking For?");
 } /*/
