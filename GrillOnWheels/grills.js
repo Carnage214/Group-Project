@@ -1,6 +1,7 @@
-$('#buttons').on('click', function(){
+/*/$('#buttons').on('click', function(){
 		document.getElementById("info-side").style.visibility = "visible";
 	});
+  /*/
 
 	var slideIndex = 1;
 //showDivs(slideIndex);
@@ -30,7 +31,8 @@ function showDivs(n) {
 } /*/
 
   $('.mapIMG').on('mouseover', function () {
-    $("#demo").text($(this).data('info'));   
+    $("#demo").text($(this).data('info'));
+
   })
 
   $('.mapIMG').on('mouseout', function () {
@@ -38,4 +40,4 @@ function showDivs(n) {
   })
 /*/ function mouseOut() {
     $("#demo").text("What Area Are You Looking For?");
-} /*/
+} /*/ 
