@@ -41,3 +41,24 @@ function showDivs(n) {
 /*/ function mouseOut() {
     $("#demo").text("What Area Are You Looking For?");
 } /*/ 
+function showTweets (twitterHandle) {
+    document.getElementById('timeline').innerHTML="";
+
+    twttr.widgets.createTimeline({
+      sourceType: "profile",
+      screenName: twitterHandle
+    },
+    document.getElementById('timeline'),
+    {
+      width: '450',
+      height: '700',
+      related: 'twitterdev,twitterapi'
+    }).then(function (el) {
+      console.log("Embedded a timeline.")
+    });
+  }
+
+  document.getElementById('showNewTweets').onclick = function () {
+    var twitterHandle = document.getElementById('twitter-handle').value;
+    showTweets(twitterHandle)
+  } 
