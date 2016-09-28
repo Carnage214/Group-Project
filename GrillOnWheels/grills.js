@@ -1,7 +1,6 @@
-/*/$('#buttons').on('click', function(){
+$('#buttons').on('click', function(){
 		document.getElementById("info-side").style.visibility = "visible";
 	});
-  /*/
 
 	var slideIndex = 1;
 //showDivs(slideIndex);
