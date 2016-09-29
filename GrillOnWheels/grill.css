@@ -4,6 +4,7 @@
 #buttons{
 	background-color: #FBAF43;
 	color: #EA1E26;
+	width: 75%;
 }
 #buttons:hover{
 	background-color: #EA1E26;
@@ -114,7 +115,7 @@ background-position: 0 100%;
 		width: 75%;
 		height: 90%;
 		float: left;
-		visibility: visible;
+		display: none;
 	}
 	#buttons{
 		margin: 10px;

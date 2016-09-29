@@ -1,5 +1,12 @@
-$('#buttons').on('click', function(){
-		document.getElementById("info-side").style.visibility = "visible";
+$('.trucks').on('click', function(){
+  console.log('hi');
+		document.getElementById("info-side").style.display = "block";
+     $('#Name').text($(this).data('name'));
+     var twitterHandle = $(this).data('twitter');
+     console.log(twitterHandle);
+
+     showTweets(twitterHandle);
+    // WHERE TWITTER NAME WILL BE PUSHED AND PUT INTO CODE
 	});
 
 	var slideIndex = 1;
@@ -12,7 +19,7 @@ function plusDivs(n) {
 function currentDiv(n) {
   showDivs(slideIndex = n);
 }
-/*/
+/*/ IMAGE GALLARY FUNCTION
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
@@ -37,10 +44,9 @@ function showDivs(n) {
   $('.mapIMG').on('mouseout', function () {
     $("#demo").text($(this).data('default'));   
   })
-/*/ function mouseOut() {
-    $("#demo").text("What Area Are You Looking For?");
-} /*/ 
+
 function showTweets (twitterHandle) {
+  console.log(twitterHandle);
     document.getElementById('timeline').innerHTML="";
 
     twttr.widgets.createTimeline({
@@ -56,8 +62,3 @@ function showTweets (twitterHandle) {
       console.log("Embedded a timeline.")
     });
   }
-
-  document.getElementById('showNewTweets').onclick = function () {
-    var twitterHandle = document.getElementById('twitter-handle').value;
-    showTweets(twitterHandle)
-  } 
