@@ -10,6 +10,8 @@
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 <script src="https://platform.twitter.com/widgets.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJr5Y7RlmJtBTAr4_pommFH4icfK3sqr0&libraries=places&callback=initAutocomplete"
+         async defer></script>
 
 
 <a href="index.html"><img id="info-nav" src="images/info-nav.png"></a>
@@ -19,9 +21,9 @@
 <div id='button-side'>
 <button id='buttons' type="button" class="btn btn-default btn-lg trucks" data-name="THE PEACHED TORTILLA" data-twitter='peachedtortilla' data-map='' data-images='' >THE PEACHED <br> TORTILLA</button>
 <button id='buttons' type="button" class="btn btn-default btn-lg trucks" data-name="SUPER BURRITO" data-twitter='superburrito'>SUPER BURRITO</button>
-<button id='buttons' type="button" class="btn btn-default btn-lg trucks" data-name="BISCUTS AND GROOVY">BISCUTS AND GROOVY</button>
-<button id='buttons' type="button" class="btn btn-default btn-lg trucks" data-name="THE PEACHED TORTILLA">MICKLETHWAIT <br> CRAFT MEATS</button>
-<button id='buttons' type="button" class="btn btn-default btn-lg trucks" data-name="THE PEACHED TORTILLA">THE VEGAN YATCH</button>
+<button id='buttons' type="button" class="btn btn-default btn-lg trucks" data-name="BISCUTS AND GROOVY" data-twitter='BiscuitsGroovy'>BISCUTS AND GROOVY</button>
+<button id='buttons' type="button" class="btn btn-default btn-lg trucks" data-name="MICKLETHWAIT CRAFT MEATS" data-twitter='craftmeats'>MICKLETHWAIT <br> CRAFT MEATS</button>
+<button id='buttons' type="button" class="btn btn-default btn-lg trucks" data-name="THE VEGAN YACHT" data-twitter='theveganyacht'>THE VEGAN YATCH</button>
 </div>
 
 <div id='info-side'>
@@ -38,6 +40,8 @@
 <!-- Capital: The Violet Taco, Kebaba!icious, Arlo's, Angry Egg Roll, the Grub Hub, One Tacos -->
 	<div id='side2'>
 		<div id='Map'>GOOGLE MAP</div>
+		    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <div id="map"></div>
 		<!--
 		<div id='Image'>IMAGE</div>
 		<div id='Gallary'>GALLARY</div>
