@@ -4,47 +4,47 @@
 	<title>Grill On Wheels</title>
 	<link rel="stylesheet" type="text/css" href="grill.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-<script type="text/javascript" src="grills.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJr5Y7RlmJtBTAr4_pommFH4icfK3sqr0&libraries=places&callback=initAutocomplete"
+         async defer></script>
 
+
+<a href="index.html"><img id="info-nav" src="images/info-nav.png"></a>
 <div id='header'>
-	<h1> TEST PROJECT </h1>
 </div>
 
 <div id='button-side'>
-<button id='buttons' type="button" class="btn btn-default btn-lg">Large button</button>
-<button id='buttons' type="button" class="btn btn-default btn-lg">Large button</button>
-<button id='buttons' type="button" class="btn btn-default btn-lg">Large button</button>
-<button id='buttons' type="button" class="btn btn-default btn-lg">Large button</button>
+<button id='buttons' type="button" class="btn btn-default btn-lg trucks" data-name="THE PEACHED TORTILLA" data-twitter='peachedtortilla' data-map='' data-images='' >THE PEACHED <br> TORTILLA</button>
+<button id='buttons' type="button" class="btn btn-default btn-lg trucks" data-name="SUPER BURRITO" data-twitter='superburrito'>SUPER BURRITO</button>
+<button id='buttons' type="button" class="btn btn-default btn-lg trucks" data-name="BISCUTS AND GROOVY" data-twitter='BiscuitsGroovy'>BISCUTS AND GROOVY</button>
+<button id='buttons' type="button" class="btn btn-default btn-lg trucks" data-name="MICKLETHWAIT CRAFT MEATS" data-twitter='craftmeats'>MICKLETHWAIT <br> CRAFT MEATS</button>
+<button id='buttons' type="button" class="btn btn-default btn-lg trucks" data-name="THE VEGAN YACHT" data-twitter='theveganyacht'>THE VEGAN YATCH</button>
 </div>
 
 <div id='info-side'>
 	<div id='side1'>
 		<div id='Name'>NAME</div>
-		<div id='Description'>DESCRIPTION
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-		</div>
-		<div id='Twitter'>REVIEW
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco </p>
-		<br>
-		<p>laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-		</div>
+
+		<div id='Twitter'>
+		<div id="timeline">
+	
+</div>
+<!-- SO CRO: Hey!..You Gonna EAt or What  -->
+<!-- UT CAMPUS: Don Japanese Food Truck, Song La, Ceviche 7 -->
+<!-- BARTON: Chi'Lantro, The picnic, biscuts + groovy, Lukes Inside Out-->
+<!-- Capital: The Violet Taco, Kebaba!icious, Arlo's, Angry Egg Roll, the Grub Hub, One Tacos -->
 	<div id='side2'>
-		<div id='Map'>MAP</div>
+		<div id='Map'>GOOGLE MAP</div>
+		    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <div id="map"></div>
+		<!--
 		<div id='Image'>IMAGE</div>
-		<!-- <div id='Gallary'>GALLARY</div> -->
+		<div id='Gallary'>GALLARY</div>
 					<div class="w3-content w3-display-container" style="max-width:800px">
 					  <img class="mySlides" src="foodtruck1.jpg" style="width:100%">
 					  <img class="mySlides" src="foodtruck2.jpg" style="width:100%">
@@ -56,9 +56,9 @@
 					    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
 					    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
 					  </div>
-					</div>
+					</div> -->
 		</div>
 </div>
-<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="grills.js"></script>
 </body>
 </html>

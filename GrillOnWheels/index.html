@@ -1,55 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Grill On Wheels</title>
 	<link rel="stylesheet" type="text/css" href="grill.css">
 	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
 </head>
 <body>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJr5Y7RlmJtBTAr4_pommFH4icfK3sqr0&libraries=places&callback=initAutocomplete"
+         async defer></script>
 <div id='title'>
-<h1> grills on wheels</h1>
-<h2> Austin's #1 spot for Food Trucks </h2>
+<img id="headrIMG" src="images/GOW-lrg.png">
 </div>
-
+<div id="testHover">
 <div id='index-header'>
 </div>
+</div>
 
-<h4 id="demo">What Area Are You Looking For?</h4>
-
+<h4 id="demo">Feeling Hungry? Please Select An Area</h4>
 <div id='austin-map'>
+
 <div id='top-map'>
-	<div class="NE">
-	    <a href="facebook.com"><img class='mapIMG' id='NE' src="images/NE.png" data-info="North East Austin" data-default="Please Select An Area"/>
+	<div class="mapDiv">
+
+	<!--
+	<div id="info" class="image-swap" data-info="North East Austin" data-default="Where would you like to eat?"><a href="info.html" ></a></div>
+	
+	<div id="frog" class="image-swap"><a href="info.html"></a></div>
+	<div id="street" class="image-swap"><a href="info.html"></a></div>
+	<div id="ut" class="image-swap"><a href="info.html"></a></div>
+	<div id="butter" class="image-swap"><a href="info.html"></a></div>
+	<div id="love" class="image-swap"><a href="info.html"></a></div>
+	<div id="trex" class="image-swap"><a href="info.html"></a></div>
+	<div id="capital" class="image-swap"><a href="info.html"></a></div>
+-->
+	    <a href="info.html"><img class='mapIMG' id="bats-map" src="images/bats-map.png" data-info="North East Austin" data-default="Where would you like to eat?"/>
 	    </a>
 	</div>
-	<div class="NW">
-	    <a href="facebook.com"><img class='mapIMG' id='NW' src="images/NW.png" data-info="North West Austin" data-default="Please Select An Area"/>
+	<script type="text/javascript">
+	</script>
+	<div class="mapDiv">
+	    <a href="facebook.com"><img class='mapIMG' id="frog-map" src="images/frog-map.png" data-info="North West Austin" data-default="Where would you like to eat?"/>
 	    </a>
 	</div>
 </div>
 
 <div id='middleMap'>
-	<div class="E">
-	    <a href="facebook.com"><img class='mapIMG' id='E' src="images/E.png" data-info="East Austin" data-default="Please Select An Area"/>
+	<div class="mapDiv">
+	    <a href="facebook.com"><img class='mapIMG' id="6Street-map" src="images/6Street-map.png" data-info="East Austin" data-default="Where would you like to eat?"/>
 	    </a>
 	</div>
-	<div class="Downtown">
-	    <a href="facebook.com"><img class='mapIMG' id='Downtown' src="images/downtown.png" data-info="Downtown Austin" data-default="Please Select An Area"/>
+	<div class="mapDiv">
+	    <a href="facebook.com"><img class='mapIMG'  id="ut-map" src="images/ut-map.png" data-info="Downtown Austin" data-default="Where would you like to eat?"/>
 	    </a>
 	</div>
-	<div class="W">
-	 	<a href="facebook.com"><img class='mapIMG' id='W' src="images/W.png" data-info="West Austin" data-default="Please Select An Area"/>
+	<div class="mapDiv">
+	 	<a href="facebook.com"><img class='mapIMG' id="butter-map" src="images/butter-map.png" data-info="West Austin" data-default="Where would you like to eat?"/>
 		</a>
 </div>
 </div>
-
 <div id='bottomMap'>
-	<div class="S">
-	    <a href="facebook.com"><img class='mapIMG' id='S' src="images/E.png" data-info="South Austin" data-default="Please Select An Area"/>
+	<div class="mapDiv">
+	    <a href="facebook.com"><img class='mapIMG' id="love-map" src="images/love-map.png" data-info="South Austin" data-default="Where would you like to eat?"/>
 	    </a>
 	</div>
-	<div class="SW">
-	    <a href="facebook.com"><img class='mapIMG' id='SW' src="images/downtown.png" data-info="South West Austin" data-default="Please Select An Area"/>
+	<div class="mapDiv">
+	    <a href="facebook.com"><img class='mapIMG' id="trex-map" src="images/trex-map.png" data-info="South West Austin" data-default="Where would you like to eat?"/>
+	    </a>
+	</div>
+		<div class="mapDiv">
+	    <a href="facebook.com"><img class='mapIMG' id="capital-map" src="images/capital-map.png" data-info="South West Austin" data-default="Where would you like to eat?"/>
 	    </a>
 	</div>
 </div>
@@ -59,3 +81,4 @@
 <script type="text/javascript" src='grills.js'></script>
 </body>
 </html>
+<!-- 6th street sign, campus tower/how are you? graffiti, bats, capital(?), willie nelson statue/ steve ray von statue, broken spoke sign (So Lamar), austin motel, i love you so much, 

@@ -1,7 +1,108 @@
-#header{
+/* Main CSS Doc
+
+/* Header / Top of Doc */
+#buttons{
+	background-color: #FBAF43;
+	color: #EA1E26;
+	width: 75%;
+}
+#buttons:hover{
+	background-color: #EA1E26;
+	color: white;
+}
+
+#info {
+	width: 25%;
+	height: 250px;
+   background-image: url('images/bats-map3.png');
+   background-position: 0 0;
+   background-size: 100%;
+}
+#info:hover {
+background-position: 0 100%;
+}
+#butter {
+	width: 25%;
+	height: 250px;
+   background-image: url('images/butter-map5.png');
+   background-position: 0 0;
+   background-size: 100%;
+}
+#butter:hover {
+background-position: 0 100%;
+}
+#frog {
+	width: 25%;
+	height: 250px;
+   background-image: url('images/frog-map2.png');
+   background-position: 0 0;
+   background-size: 100%;
+}
+#frog:hover {
+background-position: 0 100%;
+}
+#trex {
+	width: 25%;
+	height: 250px;
+   background-image: url('images/trex-map5.png');
+   background-position: 0 0;
+   background-size: 100%;
+}
+#trex:hover {
+background-position: 0 100%;
+}
+#ut {
+	width: 25%;
+	height: 250px;
+   background-image: url('images/ut-map2.png');
+   background-position: 0 0;
+   background-size: 100%;
+}
+#ut:hover {
+background-position: 0 100%;
+}
+	#header{
 		background-color: light blue;
 		width: 100%;
 		height: 10%
+	}
+	#headrIMG{
+		width: 100%;
+	}
+	#demo{
+	}
+	h4{
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
+		font-size: 200%;
+	}
+		img{
+		width: 50%;
+	}
+
+
+/* Home Map Style */
+#info-nav{
+	width: 100%;
+	margin-bottom: 5%;
+}
+	#austin-map{
+		width: 95%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+	}
+	.mapIMG{
+		width: 25%;
+		float: left;
+	}
+	.mapIMG:hover{
+		-webkit-filter: hue-rotate(240deg) saturate(3.3);
+	}
+
+	/* Info Page CSS */.info-header{
+		height: 5%;
+		width: 10%;
+		float: left;
 	}
 	#button-side{
 		background-color: white;
@@ -10,11 +111,11 @@
 		float: left;
 	}
 	#info-side{
-		background-color: white;
+		background-color: #5ECBF4;
 		width: 75%;
 		height: 90%;
-		float: right;
-		visibility: hidden;
+		float: left;
+		display: none;
 	}
 	#buttons{
 		margin: 10px;
@@ -26,45 +127,47 @@
 		background-color: light blue;
 	}
 	#side1{
+		padding-top: 5%;
 		width: 50%;
-		background-color: white;
 		float:left;
 	}
 	#Name{
 		width: 90%;
 		font-size: 50px;
 		text-align: center;
-		background-color: #b2ccb9;
+		background-color: #EA1E26;
+		font-family: 'Montserrat', sans-serif;
+		color: white;
 		float:left;
 		margin-left: 5%;
 		margin-bottom: 5%;
 	}
 	#Description{
 		width: 80%;
-		background-color: #b2ccb9;
+		background-color: white;
 		float:left;
 		margin-left: 10%;
 		margin-bottom: 5%;
 	}
 	#Twitter{
 		width: 85%;
-		background-color: #b2ccb9;
+		background-color: white;
 		float:left;
 		margin-left: 8%;
 		margin-bottom: 5%;
 
 	}
 	#side2{
+		padding-top: 5%;
 		width: 50%;
 		height: 90%;
-		background-color: white;
 		float: right;
 		position: relative;
 	}
-		#Map{
+	#Map{
 		width:90%;
 		height: 300px;
-		background-color: #b2ccb9;
+		background-color: white;
 		float: right;
 		margin-right: 5%;
 		margin-bottom: 8%;
@@ -96,62 +199,3 @@
 		font-size: 250%;
 		text-align: center;
 	}
-	#austin-map{
-		width:80%;
-		margin-left: 20%;
-	}
-	img{
-		width: 50%;
-	}
-		.mapIMG:hover{
--webkit-filter: hue-rotate(240deg) saturate(3.3);
-	}
-	#top-map{
-		width: 100%;
-	}
-	#NW{
-		left: -10px;
-		float: left;
-		width: 38%;
-	}
-	#NE{
-		float: left;
-		width: 38%;
-		display: inline-block;
-		right: -25px;
-	}
-	#middleMap{
-width: 100%;
-	}
-	#E{
-		float: left;
-		width: 25%;
-	}
-	#Downtown{
-		float: left;
-		width: 25%;
-	}
-	#W{
-		float: left;
-		width: 25%;
-		margin-right: 10%;
-	}
-	#bottomMap{
-		width: 100%;
-	}
-	#S{
-		float: left;
-		width: 20%;
-		display: inline-block;
-	}
-	#SW{
-		float: left;
-		width: 30%;
-		display: inline-block;
-	}
-	h4{
-		font-family: 'Dosis', sans-serif;
-		text-align: center;
-		font-size: 200%;
-	}
-	
