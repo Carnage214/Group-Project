@@ -5,7 +5,9 @@ $('.trucks').on('click', function(){
      var twitterHandle = $(this).data('twitter');
      console.log(twitterHandle);
      var location = $(this).data('name');
-
+     var map = $(this).data('map');
+     $('#map').append(map);
+     console.log(map);
      showTweets(twitterHandle);
     // WHERE TWITTER NAME WILL BE PUSHED AND PUT INTO CODE
 	});
@@ -20,29 +22,13 @@ function plusDivs(n) {
 function currentDiv(n) {
   showDivs(slideIndex = n);
 }
-/*/ IMAGE GALLARY FUNCTION
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-white";
-} /*/
 
-  $('.mapIMG').on('mouseover', function () {
+  $('.image-swap').on('mouseover', function () {
     $("#demo").text($(this).data('info'));
 
   })
 
-  $('.mapIMG').on('mouseout', function () {
+  $('.image-swap').on('mouseout', function () {
     $("#demo").text($(this).data('default'));   
   })
 
